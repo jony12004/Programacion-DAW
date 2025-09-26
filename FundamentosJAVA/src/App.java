@@ -32,10 +32,14 @@ public class App {
 
         System.out.println(PI);
 
-        int b = 'b';
-        System.out.println(b);
+        int b = 'b'; // Un caracter se guarda en un enter segun ASCII
         char c = 98;
+        System.out.println(b + " " + c);
+        System.out.print("hola");
+        System.out.println("hola");
         System.out.println(c);
+        System.out.println("un texto cualquiera");
+        System.err.println("un bonito error");
     }
     /*  Definicion de la funcion funcion
     no devuelve nada*/
