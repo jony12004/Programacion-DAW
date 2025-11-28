@@ -28,7 +28,7 @@ public class App {
         boolean logico2 = false;
         
         System.out.println(logico);
-        System.out.println(App.logico);
+        System.out.println(Arrays.logico);
 
         System.out.println(PI);
 

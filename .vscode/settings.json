@@ -1,6 +1,9 @@
 {
     "java.project.sourcePaths": [
-        "FundamentosJAVA\\src"
+        "arraysJAVA/src",
+        "actividades/src",
+        "FundamentosJAVA/src",
+        "RelacionEjerciciosUnidad2"
     ],
     "java.project.referencedLibraries": []
 }
