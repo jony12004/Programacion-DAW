@@ -29,8 +29,8 @@ public class Batalla {
                 break;
             case 4:
                 salir = true;
+                System.out.println("Saliendo...");
                 break;
-
             }
         }while (!salir);
     }
@@ -44,7 +44,7 @@ public class Batalla {
             for (int i = 0; i < heroes.size(); i++) {
                 System.out.println(heroes.get(i));
             }
-
+            if(!orcos.isEmpty())
             System.out.println("---------MOSTRAR ORCOS--------");
             for (int i = 0; i < orcos.size(); i++) {
                 System.out.println(orcos.get(i));
@@ -79,12 +79,12 @@ public class Batalla {
         } else if(orcos.isEmpty()){
             System.out.println("Debes agregar un orco");
         }else {
-    
+            int contador = 1;
             while (!heroes.isEmpty() && !orcos.isEmpty()) {
                 Personaje h = heroes.get((int)(Math.random() * heroes.size()));
                 Personaje o = orcos.get((int)(Math.random() * orcos.size()));
 
-                System.out.println("\n--- ENFRENTAMIENTO ---");
+                System.out.println("\n" + contador + " ENFRENTAMIENTO ");
                 System.out.println("Héroe:  " + h);
                 System.out.println("Orco:   " + o);
 
@@ -104,8 +104,9 @@ public class Batalla {
                     System.out.println("El orco " + o.getNombre() + " ha muerto.");
                     orcos.remove(o);
                 }
+                contador++;
             }
-            System.out.println("\n===== FIN DE LA BATALLA =====");
+            System.out.println("\nFIN DE LA BATALLA");
 
             if (heroes.isEmpty() && orcos.isEmpty()) {
                 System.out.println("Empate: ¡todos han muerto!");
