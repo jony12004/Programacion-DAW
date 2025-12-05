@@ -1,4 +1,4 @@
 package actividadentornos;
 
-public class Persona {
+public class Individuo {
 }
